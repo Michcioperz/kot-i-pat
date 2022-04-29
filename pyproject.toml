@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "kot-i-pat"
+version = "0.1.0"
+description = ""
+authors = ["Michał Sidor <public+git@meekchopp.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.75.2"
+cryptography = "^36.0.2"
+httpx = "^0.22.0"
+opentelemetry-sdk = "^1.11.1"
+opentelemetry-api = "^1.11.1"
+opentelemetry-exporter-otlp-proto-grpc = "^1.11.1"
+opentelemetry-instrumentation-httpx = "^0.30b1"
+opentelemetry-instrumentation-fastapi = "^0.30b1"
+pydantic = "^1.9.0"
+
+[tool.poetry.dev-dependencies]
+uvicorn = "^0.17.6"
+black = "^22.3.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
